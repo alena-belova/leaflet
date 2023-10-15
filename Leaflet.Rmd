@@ -1,0 +1,18 @@
+---
+title: "Leaflet"
+author: "Alena Belova"
+date: "2023-10-15"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r}
+
+library(leaflet)
+
+my_map <- leaflet() %>% addTiles()
+my_map <- my_map %>% addMarkers(lat=41.0385, lng=28.9864, popup = "Taksim Square, Istanbul")
+my_map
+
+```
